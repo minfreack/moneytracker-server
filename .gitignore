@@ -1,0 +1,35 @@
+# Dependencias instaladas por npm
+/node_modules
+
+# Dependencias instaladas por yarn
+/yarn.lock
+
+# Logs
+/logs
+*.log
+
+# Archivos de compilación
+/dist
+/build
+
+# Dependencias locales (pueden ser diferentes en función del entorno)
+/.pnp
+.pnp.js
+
+# Cache de npm
+/.npm
+
+# Cache de yarn
+/.yarn
+.yarn/*
+
+# Archivos de entorno locales
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+# Historial de sesión
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
