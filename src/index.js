@@ -11,7 +11,16 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 dotenv.config()
-app.use(cors());
+
+// Configuración de CORS
+const corsOptions = {
+  origin: 'https://moneytracker-opal.vercel.app/', // Origen permitido
+  methods: ['GET', 'POST'], // Métodos permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
+};
+
+
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true }));
 
