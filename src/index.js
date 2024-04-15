@@ -44,12 +44,8 @@ io.on('connection', async(socket) => {
     }})
   });
 
-
-
 routes(app)
 
 server.listen(port, () => {
     return console.log(`Server is listening on ${port}`);
 });
-
-module.exports = app
